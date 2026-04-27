@@ -5,14 +5,14 @@
     font-family: tahoma;
 }
 
-body{
-    background-color:#F5F0E1;
+body {
+    background-color: #F5F0E1;
     font-size: 14px;
 }
 
 nav {
-    background-color:#5C4033CC;
-    padding: 10px;
+    background-color: #5C4033CC;
+    padding: 15px;
 }
 
 nav ul {
@@ -20,7 +20,7 @@ nav ul {
     justify-content: space-around;
     gap: 10px;
     list-style: none;
-    
+
 }
 
 .nama-web {
@@ -37,16 +37,16 @@ nav ul li a {
     padding: 20px;
 }
 
-.isi-utama{
+.isi-utama {
     display: flex;
-    text-align:center;
+    text-align: center;
     justify-content: center;
     font-size: 27px;
 }
 
 .isi-desk {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     margin-top: 5px;
     font-size: 12px;
 }
@@ -59,32 +59,28 @@ nav ul li a {
 
 .rak-buku {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 16px;
     padding: 10px;
 }
 
-/* DIUBAH: hapus padding, border, warna teks putih */
 .bukunya {
     background-color: #ffffff;
     border-radius: 14px;
     overflow: hidden;
 }
 
-/* DIUBAH: hapus border-radius & tambah display block */
 img {
-    border-radius: 0;
     width: 100%;
-    height: 200px;
+    height: 450px;
     object-fit: cover;
     display: block;
 }
 
-/* DIUBAH: background putih, teks gelap, padding rapi */
 .isi-buku {
     background-color: #ffffff;
     color: #1a1a1a;
-    padding: 10px 12px  12px;
+    padding: 10px 12px 12px;
     font-size: 13px;
     line-height: 1.5;
 }
@@ -99,6 +95,7 @@ img {
 footer {
     padding: 5px 0;
     background-color: #5C4033CC;
+    color: white;
 }
 
 .title {
@@ -108,14 +105,24 @@ footer {
 
 .sosmed {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10px;
     padding: 10px;
 }
 
 .sosmed a {
     text-decoration: none;
     font-style: none;
-    color: black;
+    color: white;
+}
+
+.sosmed p {
+    border-left: 2px solid;
+    padding-left: 12px;
+}
+
+.sosmed p:first-child {
+    border-left: none;
 }
 
 .cp {
@@ -124,6 +131,38 @@ footer {
     text-align: center;
 }
 
-@media (min-width: 768px) {}
+@media (min-width: 375px) {
+    img {
+        height: 550px;
+    }
+}
+
+@media (min-width: 425px) {
+    img {
+        height: 600px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .rak-buku {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        display: block;
+    }
+
+    #about {
+        line-height: 1.5;
+    }
+
+}
 
 @media (min-width: 1024px) {}
