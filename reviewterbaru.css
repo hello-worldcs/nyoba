@@ -13,11 +13,11 @@ body {
 nav {
     background-color: #5C4033CC;
     padding: 15px;
-    transition:background-color 0.6s ease ;
+    transition: background-color 0.6s ease;
 }
 
 nav:hover {
-    background-color:#5C4033;
+    background-color: #5C4033;
 }
 
 nav ul {
@@ -84,9 +84,9 @@ nav ul li a {
     transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 
-.bukunya:hover {
+.bukunya:active {
     box-shadow: 7px 7px 10px rgba(43, 40, 40, 0.7);
-    transform: translateY(-5px) scale(1.05);
+    transform: scale(0.95);
 }
 
 img {
@@ -111,16 +111,10 @@ img {
     line-height: 1.4;
     margin-bottom: 10px;
     transition: background-color 1s ease,
-                color 1s ease,
-                padding 1s ease,
-                border-radius 1s ease;
-}
-
-#about:hover {
-    background-color: #5C4033CC;
-    padding: 10px 50px 25px 50px;
-    border-radius: 100px;
-    color: white;
+        color 1s ease,
+        padding 1s ease,
+        border-radius 1s ease,
+        transform 1s ease;
 }
 
 footer {
@@ -234,6 +228,11 @@ footer {
         height: 250px;
     }
 
+    .bukunya:active {
+        box-shadow: 7px 7px 10px rgba(43, 40, 40, 0.7);
+        transform: translateY(-5px) scale(1.05);
+    }
+
     .isi-buku {
         font-size: 14px;
     }
@@ -280,11 +279,14 @@ footer {
         padding: 20px;
     }
 
+    .bukunya:hover {
+        box-shadow: 7px 7px 10px rgba(43, 40, 40, 0.7);
+        transform: translateY(-5px) scale(1.05);
+    }
+
     img {
         width: 100%;
         height: 350px;
-        object-fit: cover;
-        display: block;
     }
 
     .isi-buku {
@@ -296,6 +298,14 @@ footer {
         font-size: 18px;
         padding: 0 20px 20px 20px;
     }
+
+    #about:hover {
+    background-color: #5C4033CC;
+    transform: scale(0.95);
+    padding: 10px 50px 25px 50px;
+    border-radius: 100px;
+    color: white;
+}
 
     footer {
         font-size: 15px;
