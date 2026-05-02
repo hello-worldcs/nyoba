@@ -54,7 +54,7 @@ nav ul li a {
     display: flex;
     text-align: center;
     justify-content: center;
-    font-size: 27px;
+    font-size: 34px;
 }
 
 .isi-desk {
@@ -79,6 +79,7 @@ nav ul li a {
 
 .bukunya {
     background-color: #ffffff;
+    margin: 10px;
     border-radius: 14px;
     overflow: hidden;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -166,9 +167,6 @@ footer {
 }
 
 @media (min-width: 375px) {
-    .isi-utama {
-        font-size: 32px;
-    }
 
     .isi-desk {
         font-size: 13px;
@@ -228,6 +226,11 @@ footer {
         height: 250px;
     }
 
+    .bukunya {
+        margin: 0px;
+        transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    }
+
     .bukunya:active {
         box-shadow: 7px 7px 10px rgba(43, 40, 40, 0.7);
         transform: translateY(-5px) scale(1.05);
@@ -279,6 +282,10 @@ footer {
         padding: 20px;
     }
 
+    .bukunya {
+        transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    }
+
     .bukunya:hover {
         box-shadow: 7px 7px 10px rgba(43, 40, 40, 0.7);
         transform: translateY(-5px) scale(1.05);
@@ -300,12 +307,12 @@ footer {
     }
 
     #about:hover {
-    background-color: #5C4033CC;
-    transform: scale(0.95);
-    padding: 10px 50px 25px 50px;
-    border-radius: 100px;
-    color: white;
-}
+        background-color: #5C4033CC;
+        transform: scale(0.95);
+        padding: 10px 50px 25px 50px;
+        border-radius: 100px;
+        color: white;
+    }
 
     footer {
         font-size: 15px;
